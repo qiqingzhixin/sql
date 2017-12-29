@@ -1,1 +1,16 @@
---这是select语句的一些使用方式
+--这是select语句的一些使用方
+--SQL server 数据库
+--基本使用有
+--创建一个数据库
+create database school
+--使用者数据库
+use school
+--创建一个表格
+create table D(yxh varchar(2) not null primary key,
+mc char(10) not null,
+dz char(16) not null,
+lxdh varchar(8) not null)
+--插入一条语句
+insert into D values('01','计算机学院','上大东校区三号楼','65347567')
+--输出一个列表
+select* from D
